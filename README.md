@@ -5,7 +5,7 @@ This repository includes a c# app interface and a python script as backend to ru
 The main app interface will be something like screenshot below.
 <br/>
 <br/>
-![App](https://user-images.githubusercontent.com/11568577/126013081-be2927eb-edb7-4bf1-a7d4-94fecf9e8361.PNG)
+![App](https://user-images.githubusercontent.com/11568577/126014817-0dba08d7-9b88-432c-b4f9-2a07fb433233.PNG)
 
 ## Requirements
 ### Python Libraries
