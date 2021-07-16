@@ -1,0 +1,124 @@
+{
+  "word2vec_file_location": "D:\\Data\\vec\\cc.fa.300.vec",
+  "methods": [
+    {
+      "title": "word2vec_xgboost",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "Word2VecVectorizer",
+        "classifier": "XGBClassifier"
+      },
+      "configs": {
+        "vec_size": 100,
+        "depth": 3
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "tfidf_svd_logistic_regression",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "TfidfVectorizer",
+        "dim_reduction": "TruncatedSVD",
+        "classifier": "logistic_regression"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "tfidf_svd_random_forrest",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "TfidfVectorizer",
+        "dim_reduction": "TruncatedSVD",
+        "classifier": "random_forrest"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "count_svd_xgboost",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "CountVectorizer",
+        "dim_reduction": "TruncatedSVD",
+        "classifier": "XGBClassifier"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "tfidf_svd_xgboost",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "TfidfVectorizer",
+        "dim_reduction": "TruncatedSVD",
+        "classifier": "XGBClassifier"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "tfidf_xgboost",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "TfidfVectorizer",
+        "classifier": "XGBClassifier"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "word2vec_random_forest",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "Word2VecVectorizer",
+        "classifier": "RandomForestClassifier"
+      },
+      "configs": {
+        "vec_size": 300
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "word2vec_logistic_regression",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "Word2VecVectorizer",
+        "classifier": "logistic_regression"
+      },
+      "configs": {
+        "vec_size": 300
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "tfidf_knn",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "TfidfVectorizer",
+        "classifier": "KNeighborsClassifier"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "word2vec_knn",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "Word2VecVectorizer",
+        "classifier": "KNeighborsClassifier"
+      },
+      "configs": {
+        "vec_size": 300
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    },
+    {
+      "title": "tfidf_svd_knn",
+      "is_selected_by_default": true,
+      "pipeline": {
+        "vectorizer": "TfidfVectorizer",
+        "dim_reduction": "TruncatedSVD",
+        "classifier": "KNeighborsClassifier"
+      },
+      "script_file_name": "scripts/pipeline_builder.py"
+    }
+  ],
+  "chart_generator_script_location": "scripts/illustrate_results.py",
+  "theme": "LightGrey1"
+}
